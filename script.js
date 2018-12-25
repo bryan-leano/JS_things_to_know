@@ -1,5 +1,5 @@
-/////////////////////// 
-// LOOPS
+///////////////////////////////
+// LOOPS & ARRAY METHODS
 
 /**
 * For Loop
@@ -93,6 +93,7 @@ while (i > 0) {
 * Map array method
 */
 
+/*
 let powRangInfo = [
 	{color: 'Red', name: 'Jason', age: 20},
 	{color: 'Pink', name: 'Kimberly', age: 18},
@@ -113,6 +114,7 @@ console.log(nameLengths);
 * ForEach array method
 */
 
+/*
 let array = [1, 2, 3, 4, 5];
 
 array.forEach(function(entry) {
@@ -132,4 +134,36 @@ powRang.forEach(function(color) {
 powRangInfo.forEach(function(pow) {
 	console.log(`${pow.name} is ${pow.age} years old & is the ${pow.color} Ranger!`);
 });
+*/
 
+
+///////////////////////////////
+// FUNCTION DECLARATIONS V FUNCTION EXPRESSIONS
+
+// ** What is the a Function Declaration? **
+// Function Declarations defines a named function variable without requiring variable assignment (the "=").
+// Function Declarations must begin with "function".
+
+function bar() {
+	console.log('Hello');
+};
+
+// ** What is the a Function Expression? **
+// A Function Expression defines a function as a part of a larger expression syntax (typically a variable assignment).
+// Function expressions can be named or anonymous
+// Function Expressions must not start with “function”.
+
+
+var a = function() {
+	console.log('Aloha');
+};
+
+var b = function bar() {
+	console.log('Ciao!');
+};
+
+bar();
+a();
+b();
+
+// It's almost always better to use function expressions over function declarations
