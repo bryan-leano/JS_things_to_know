@@ -90,10 +90,46 @@ while (i > 0) {
 
 
 /**
-* Map Loop
+* Map array method
 */
+
+let powRangInfo = [
+	{color: 'Red', name: 'Jason', age: 20},
+	{color: 'Pink', name: 'Kimberly', age: 18},
+	{color: 'Black', name: 'Zack', age: 22},
+	{color: 'Yellow', name: 'Trini', age: 19},
+	{color: 'Blue', name: 'Billy', age: 21}
+]
+
+let nameLengths = powRangInfo.map(function(n) {
+	let len = n.name.length;
+	return len;
+})
+
+console.log(nameLengths);
 
 
 /**
-* ForEach Loop
+* ForEach array method
 */
+
+let array = [1, 2, 3, 4, 5];
+
+array.forEach(function(entry) {
+	console.log(entry * 2);
+});
+
+let powRang = ['Red', 'Blue', 'Black', 'Yellow', 'Pink'];
+
+powRang.forEach(function(color) {
+	if (color === 'Yellow' || color === 'Pink') {
+		console.log(`The ${color} ranger is ready to battle! She is fierce!`);
+	} else {
+		console.log(`The ${color} ranger is ready to battle! He is brave!`);
+	}
+});
+
+powRangInfo.forEach(function(pow) {
+	console.log(`${pow.name} is ${pow.age} years old & is the ${pow.color} Ranger!`);
+});
+
