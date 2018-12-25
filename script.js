@@ -5,6 +5,7 @@
 * For Loop
 */
 
+/*
 var i;
 // Initialization - Initializes the iterator variable
 for (i = 0; 
@@ -59,7 +60,7 @@ function assignGrade(score) {
 
 for (var i = 60; i <= 100; i++) {
 console.log('For ' + i + ', you got a ' + assignGrade(i));
-}
+*/
 
 
 /**
@@ -70,11 +71,23 @@ console.log('For ' + i + ', you got a ' + assignGrade(i));
 var i = 99;
 while (i > 0) // Runs as long as it evaluates the expression as true
 {
-  console.log(i + " bottles of beer on the wall");
+  console.log(i + ' bottles of beer on the wall');
   //i -= 1;
   i--;
 }
+
+
+var i = 99;
+while (i > 0) {
+	if (i != 1) {
+		console.log(i + ' bottles of beer on the wall');
+	} else {
+		console.log(i + ' bottle of beer on the wall');
+	}
+	i--;
+}
 */
+
 
 /**
 * Map Loop
