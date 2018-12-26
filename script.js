@@ -144,6 +144,7 @@ powRangInfo.forEach(function(pow) {
 // Function Declarations defines a named function variable without requiring variable assignment (the "=").
 // Function Declarations must begin with "function".
 
+/*
 function bar() {
 	console.log('Hello');
 };
@@ -167,3 +168,23 @@ a();
 b();
 
 // It's almost always better to use function expressions over function declarations
+*/
+
+
+///////////////////////////////
+// RETURN
+
+// The return statement ends function execution and specifies a value to be returned to the function caller
+
+function getRectArea(width, height) {
+  if (width > 0 && height > 0) {
+    return width * height;
+  }
+  return 0;
+}
+
+console.log(getRectArea(3, 4));
+// expected output: 12
+
+console.log(getRectArea(-3, 4));
+// expected output: 0
