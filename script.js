@@ -176,6 +176,7 @@ b();
 
 // The return statement ends function execution and specifies a value to be returned to the function caller
 
+/*
 function getRectArea(width, height) {
   if (width > 0 && height > 0) {
     return width * height;
@@ -188,3 +189,16 @@ console.log(getRectArea(3, 4));
 
 console.log(getRectArea(-3, 4));
 // expected output: 0
+*/
+
+///////////////////////////////
+// HOISTING
+
+// Functions and variables are hoisted, which mean they are available before the execution phase starts.
+
+///////////////////////////////
+// SCOPING
+
+///////////////////////////////
+// THIS
+
