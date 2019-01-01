@@ -199,6 +199,41 @@ console.log(getRectArea(-3, 4));
 ///////////////////////////////
 // SCOPING
 
+// Answers the question: "where can we access a certain variable?"
+
+/*
+var a = 'Hello!';
+first();
+
+function first() {
+	var b = 'Hi!';
+	second();
+
+	function second() {
+		var c = 'Hey!';
+		console.log(a + b + c);
+	}
+}
+*/
+
+var d = 'Hello!';
+first();
+
+function first() {
+	var e = 'Hi!';
+	second();
+
+	function second() {
+		var f = 'Hey!';
+		third();
+	}
+}
+
+function third() {
+	var g = 'John';
+	console.log(d + g);
+}
+
 ///////////////////////////////
 // THIS
 
