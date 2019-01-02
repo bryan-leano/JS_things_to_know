@@ -251,7 +251,6 @@ function calculateAge(year) {
 	console.log(2018 - year);
 	console.log(this);
 }
-*/
 
 var john = {
 	name: 'John',
@@ -263,3 +262,10 @@ var john = {
 }
 
 john.calculateAge();
+*/
+
+
+///////////////////////////////
+// STATE VARIABLES
+
+// State variable: Tells us the condition of a system.
