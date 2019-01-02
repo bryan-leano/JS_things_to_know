@@ -277,3 +277,32 @@ john.calculateAge();
 // Inheritance is when one object is based on another object. It's when one object gets access to another object's properties. This is made possible by every object's prototype property.
 
 // Every JavaScript object has a prototype property. Prototype is where we put methods and properties that we want other objects to inherit.
+
+
+///////////////////////////////
+// ES6 ARROW FUNCTIONS
+
+function funcName(params) {
+	return params + 2;
+}
+funcName(2);
+// 4
+
+var funcName = (params) => params + 2
+funcName(2);
+// 4
+
+// (parameters) => { statements }
+// If no parameters, you can write it as: () => { statements }
+
+var timesTwo = params => params * 2
+console.log(timesTwo(4));  
+
+// if you have braces { }, you MUST have a return as well
+var double = num => {
+	return num * 2
+};
+console.log(double(2));
+
+// Arrow functions shine best with anything that requires this to be bound to the context, and not the function itself.
+// They do not replace regular functions. They are used to not bind this to the function itself. 
