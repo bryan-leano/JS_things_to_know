@@ -214,7 +214,6 @@ function first() {
 		console.log(a + b + c);
 	}
 }
-*/
 
 var d = 'Hello!';
 first();
@@ -233,7 +232,34 @@ function third() {
 	var g = 'John';
 	console.log(d + g);
 }
+*/
+
 
 ///////////////////////////////
-// THIS
+// THE THIS KEYWORD
 
+// What is this?
+// In a regular function call, the this keyword points at the global object, (the window object, in the browser).
+// In a method call, the this keyword points to the object calling the method.
+
+// console.log(this);
+
+/*
+calculateAge(1985);
+
+function calculateAge(year) {
+	console.log(2018 - year);
+	console.log(this);
+}
+*/
+
+var john = {
+	name: 'John',
+	yearOfBirth: 1990,
+	calculateAge: function() {
+		console.log(this);
+		console.log(this.yearOfBirth);
+	}
+}
+
+john.calculateAge();
