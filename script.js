@@ -269,3 +269,11 @@ john.calculateAge();
 // STATE VARIABLES
 
 // State variable: Tells us the condition of a system.
+
+
+///////////////////////////////
+// INHERITANCE & PROTOTYPE
+
+// Inheritance is when one object is based on another object. It's when one object gets access to another object's properties. This is made possible by every object's prototype property.
+
+// Every JavaScript object has a prototype property. Prototype is where we put methods and properties that we want other objects to inherit.
