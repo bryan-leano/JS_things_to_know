@@ -282,6 +282,7 @@ john.calculateAge();
 ///////////////////////////////
 // ES6 ARROW FUNCTIONS
 
+/*
 function funcName(params) {
 	return params + 2;
 }
@@ -306,3 +307,66 @@ console.log(double(2));
 
 // Arrow functions shine best with anything that requires this to be bound to the context, and not the function itself.
 // They do not replace regular functions. They are used to not bind this to the function itself. 
+*/
+
+
+///////////////////////////////
+// CALLBACKS
+
+
+// A callback is a function that is to be executed after another function has finished executing.
+
+
+/*
+function first() {
+	console.log(1);
+};
+
+function second() {
+	console.log(2);
+};
+
+first();
+second();
+// 1
+// 2
+*/
+
+/*
+function first() {
+	setTimeout(function() {
+		console.log(1);
+	}, 500);
+};
+
+function second() {
+	console.log(2);
+};
+
+first();
+second();
+// 2
+// 1
+*/
+
+/*
+function doHomework(subject, callback) {
+	alert(`Starting my ${subject} homework!`);
+	callback();
+}
+
+doHomework('math', function() {
+	alert(`Finished my homework!`);
+});
+// Starting my math homework!
+// Finished my homework!
+*/
+
+function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+}
+function alertFinished(){
+  alert(`Finished my homework`);
+}
+doHomework('math', alertFinished);
